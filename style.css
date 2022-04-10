@@ -47,7 +47,7 @@ ul{
 
 .nav-main ul{
     display: flex; /*Para que se pongan cada elemento del menu uno al lado de otro*/
-    margin-top: 10px;
+    
 }
 
 .nav-main ul li{
