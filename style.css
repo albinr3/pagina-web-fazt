@@ -78,6 +78,7 @@ ul{
     right: 30px;
     z-index: 2;
     font-size: 25px;
+    display: none;
 
 }
 hr{
@@ -158,7 +159,7 @@ hr{
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
-  background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 .cards-banner-one .content{
@@ -170,6 +171,7 @@ hr{
     margin: 5px 0px;
 }
 
+/* Cards Banner two */
 .cards-banner-two{
     width: 100%;
     height: 350px;
@@ -284,7 +286,33 @@ hr{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    body{
-        background-color: red;
+    .menu-btn{
+        display: block;
     }
+}
+
+@media (max-width: 500px) {
+    
+    .showcase{
+        height: 510px;
+    }
+
+    .news-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .card img{
+        width: 100%;
+        height: 250px;
+    }
+
+    .cards-banner-one .content{
+        width: 60%;
+        padding: 70px 0px 0px 10px;
+    }
+
+    .footer .footer-links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
